@@ -1,0 +1,70 @@
+vi:
+  layouts:
+    footer:
+      railstutorial: "Hướng dẫn Ruby on Rails"
+      michaelhartl: "Michael Hartl"
+      by: "Bởi"
+      news: "Tin tức"
+      button_about: "Giới thiệu"
+      button_contact: "Liên hệ"
+    header:
+      button_link_home: "Ứng dụng mẫu"
+      button_home: "Trang chủ"
+      button_help: "Trợ giúp"
+      button_login: "Đăng nhập"
+    application:
+      basetitle: "Hướng dẫn Ruby on Rails với ứng dụng mẫu"
+
+  static_pages:
+    about:
+      railstutorialapp: "Hướng dẫn Ruby on Rails với ứng dụng mẫu"
+      title: "Giới thiệu"
+      isa: "là một"
+      book: "sách"
+      and: "và"
+      screencasts: "Chuỗi màn hình"
+      toteachwebdev: "Để dạy phát triển web với"
+      content: "Đây là một ứng dụng mẫu trong hướng dẫn."
+      rails: "Ruby on Rails"
+    contact:
+      title: "liên hệ"
+      content: "Liên hệ trong Ứng dụng mẫu của Ruby on Rails ở"
+      contactpage: "trang liên hệ"
+    help:
+      title: "Trợ giúp"
+      railstutorialapp: "Hướng dẫn Ruby on Rails với ứng dụng mẫu"
+      railstutorial: "Hướng dẫn Ruby on Rails"
+      book: "sách"
+      gethelpon: "Để được trợ giúp trong hướng dẫn Ruby on Rails ở"
+      railshelp: "Phần trợ giúp trong Rails"
+      torailshelp: "Để được trợ giúp về ứng dụng mẫu này, hãy xem"
+    home:
+      homepage: "Đây là trang chủ cho"
+      railstutorial: "Hướng dẫn Ruby on Rails"
+      sampleappl: "ứng dụng mẫu"
+      sampleapp: "Ứng dụng mẫu"
+      button_signup: "Đăng ký ngay!"
+      title: "Trang chủ"
+
+  users:
+    new:
+      title: "Tin tức"
+      signup: "Đăng ký"
+      content: "Đây sẽ là trang đăng ký cho người dùng mới."
+      createacc: "Tạo tài khoản"
+      confirm: "Xác nhận"
+    create:
+      welcome: "Chào mừng bạn đến với Ứng dụng mẫu!"
+     
+  shared:
+    error_messages:
+      the_form_contains: "Biểu mẫu có chứa"
+      error: "lỗi"
+  sessions:
+    new:
+      login: "Đăng nhập"
+      newuser: "Người dùng mới"
+      rememberme: "Hãy nhớ tôi trên máy tính này"
+    create:
+      invalid: "Cả email/mật khẩu đều không hợp lệ"
+  

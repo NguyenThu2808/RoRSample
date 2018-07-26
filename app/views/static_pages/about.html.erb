@@ -1,0 +1,16 @@
+<% provide :title, t(".title") %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> | <%= t ".railstutorialapp" %></title>
+  </head>
+  <body>
+    <h1><%= t ".title" %></h1>
+    <p>
+      <%= t ".the" %> <em><%= link_to t(".railstutorial"), Settings.railstutorial %></em> <%= t ".isa" %>
+      <%= link_to t(".book"), Settings.bookrails %> <%= t ".and" %>
+      <%= link_to t(".screencasts"),Settings.screencastsrails %> <%= t ".toteachwebdev" %>
+      <%= link_to t(".rails"), Settings.rubyonrails  %>. <%= t ".content" %>
+    </p>
+  </body>
+</html>
