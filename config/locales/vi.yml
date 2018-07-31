@@ -12,8 +12,10 @@ vi:
       button_home: "Trang chủ"
       button_help: "Trợ giúp"
       button_login: "Đăng nhập"
-      acc: "Tài khoản"
+      button_logout: "Đăng xuất"
+      account: "Tài khoản"
       users: "Dánh sách người dùng"
+      button_logout: "Đăng xuất"
     application:
       basetitle: "Hướng dẫn Ruby on Rails với ứng dụng mẫu"
       button_logout: "Đăng xuất"
