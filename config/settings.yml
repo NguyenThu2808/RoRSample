@@ -6,3 +6,4 @@ screencastsrails: "http://screencasts.railstutorial.org/"
 rubyonrails: "http://rubyonrails.org/"
 contactrails: "http://www.railstutorial.org/contact"
 helprails: "http://www.railstutorial.org/help"
+valid_email_regex: /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
