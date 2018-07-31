@@ -13,6 +13,8 @@ en:
       button_home: "Home"
       button_help: "Help"
       button_login: "Log in"
+      acc: "Account"
+      users: "Users"
     application:
       basetitle: "Ruby on Rails Tutorial Sample App"
   static_pages:
@@ -61,3 +63,10 @@ en:
     error_messages:
       the_form_contains: "The form contains"
       error: "error"
+  sessions:
+    new:
+      login: "Log in"
+      newuser: "New user"
+      signupnow: "Sign up now!"
+    create:
+      invalid: "Invalid email/password combination"
