@@ -7,7 +7,7 @@ rubyonrails: "http://rubyonrails.org/"
 contactrails: "http://www.railstutorial.org/contact"
 helprails: "http://www.railstutorial.org/help"
 email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
-gravatar_url: "https://secure.gravatar.com/avatar/#{gravatar_id}?s=#{size}"
+gravatar_url: "https://secure.gravatar.com/avatar/%{gravatar_id}?s=%{gravatar_size}"
 length_name: 50
 length_email: 255
 gra_size: 80
