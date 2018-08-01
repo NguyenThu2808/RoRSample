@@ -6,4 +6,9 @@ screencastsrails: "http://screencasts.railstutorial.org/"
 rubyonrails: "http://rubyonrails.org/"
 contactrails: "http://www.railstutorial.org/contact"
 helprails: "http://www.railstutorial.org/help"
-valid_email_regex: /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
+email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
+gravatar_url: "https://secure.gravatar.com/avatar/#{gravatar_id}?s=#{size}"
+length_name: 50
+length_email: 255
+gra_size: 80
+pw_min: 6
