@@ -54,6 +54,7 @@ en:
   users:
     new:
       sign_up: "Sign up"
+      title: "Sign up"
       content: "This will be a signup page for new users."
       create_account: "Create my account"
       confirm: "Confirmation"
@@ -80,10 +81,13 @@ en:
     destroy:
       user_deleted: "User deleted"
       delete_fail: "Delele fail"
+      login_request: "Please login"
     user:
       you_sure: "You sure?"
     form:
       create_account: "Create my account"
+    show:
+      not_found: "Not found"
   shared:
     error_messages:
       the_form_contains: "The form contains"
@@ -94,6 +98,7 @@ en:
       new_user: "New user"
       signup_now: "Sign up now!"
       remember_me: "Remember me on this computer"
+      forgot_password: "(forgot password)"
     create:
       invalid: "Invalid email/password combination"
       account_not_activated_check_email_link: "Account not activated. Check your email for the activation link."
@@ -112,3 +117,30 @@ en:
   account_activation:
     edit:
       not_found: "Not found"
+      account_activated: "Account activated!"
+      invalid_activation_link: "Invalid activation link"
+  password_resets:
+    new:
+      forgot_password: "Forgot password"
+      submit: "Submit"
+    edit:
+      reset_password: "Reset password"
+      update_password: "Update password"
+      confirmation: "Confirmation"
+    create:
+      email_password_reset: "Email sent with password reset instructions"
+      email_not_found: "Email address not found"
+      account_not_activated: "Account not activated"
+    update:
+      password_reset: "Password has been reset."
+      can't_empty: "can't be empty"
+      password_reset_expired: "Password reset has expired."
+      account_not_activated: "Account not activated"
+  mailers:
+    user_mailer:
+      click_link: "To reset your password click the link below:"
+      link_expire: "This link will expire in two hours."
+      password_reset: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+      title: "Password reset"
+      account_activation: "Account activation"
+      password_reset: "Password reset"

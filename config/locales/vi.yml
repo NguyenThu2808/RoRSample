@@ -85,5 +85,11 @@ vi:
       new_user: "Người dùng mới"
       remember_me: "Hãy nhớ tôi trên máy tính này"
       signup_now: "Đăng ký ngay"
+      forgot_password: "(Quên mật khẩu)"
     create:
-      invalid: "Cả email/mật khẩu đều không hợp lệ"
+      invalid: "Email/mật khẩu đều không hợp lệ"
+  password_resets:
+    new:
+      forgot_password: "Quên mật khẩu"
+    edit:
+      reset_password: "Đặt lại mật khẩu"
