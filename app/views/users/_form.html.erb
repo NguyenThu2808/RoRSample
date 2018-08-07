@@ -8,5 +8,5 @@
   <%= f.password_field :password %>
   <%= f.label :password_confirmation, t(".confirm") %>
   <%= f.password_field :password_confirmation %>
-  <%= f.submit t(".create_account"), class: "btn btn-primary" %>
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
 <% end %>

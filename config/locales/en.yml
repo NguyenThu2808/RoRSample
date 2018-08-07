@@ -13,11 +13,11 @@ en:
       button_home: "Home"
       button_help: "Help"
       button_login: "Log in"
-      acc: "Account"
+      button_logout: "Log out"
+      account: "Account"
       users: "Users"
       profile: "Profile"
       settings: "Settings"
-      button_logout: "Log out"
     application:
       basetitle: "Ruby on Rails Tutorial Sample App"
   static_pages:
@@ -57,8 +57,10 @@ en:
       content: "This will be a signup page for new users."
       create_account: "Create my account"
       confirm: "Confirmation"
+      not_found: "The user didn't found"
     create:
       welcome: "Welcome to the Sample App!"
+      check_email_link: "Please check your email to activate your account."
     show:
       not_found: "The user didn't found"
     edit:
@@ -67,11 +69,14 @@ en:
       change: "change"
       update: "Update your profile"
       login_request: "Please log in"
+      account_activated: "Account activated!"
+      invalid_activation_link: "Invalid activation link"
     update:
       profile: "Profile updated"
     index:
       title: "All users"
       delete: "delete"
+      login_request: "Please log in"
     destroy:
       user_deleted: "User deleted"
       delete_fail: "Delele fail"
@@ -91,3 +96,19 @@ en:
       remember_me: "Remember me on this computer"
     create:
       invalid: "Invalid email/password combination"
+      account_not_activated_check_email_link: "Account not activated. Check your email for the activation link."
+      invalid_combination: "Invalid email/password combination"
+  user_mailer:
+    account_activation:
+      sampleapp: "Sample App"
+      welcome_click_link: "Welcome to the Sample App!
+        Click on the link below to activate your account:"
+      activate: "Activate"
+      hi: "Hi"
+      account_acctivation: "Account acctivation"
+    password_reset:
+      password_reset: "Password_reset"
+      hi: "Hi"
+  account_activation:
+    edit:
+      not_found: "Not found"

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :load_user, except: %i(index correct_user update destroy create)
-  before_action :logged_in_user, only: %i(index edit update)
+  before_action :load_user, except: %i(new create index)
+  before_action :logged_in_user, only: %i(index edit update destroy)
   before_action :correct_user, only: %i(edit update)
   before_action :verify_admin, only: :destroy
 
@@ -8,25 +8,25 @@ class UsersController < ApplicationController
 
   def index
     @users = User.selected.ordered
-      .paginate(page: params[:page], per_page: Settings.per_page)
+      .paginate page: params[:page], per_page: Settings.per_page
   end
 
   def new
     @user = User.new
   end
 
+  def edit; end
+
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t ".welcome"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t ".check_email_link"
+      redirect_to root_url
     else
       render :new
     end
   end
-
-  def edit; end
 
   def update
     if @user.update_attributes user_params
