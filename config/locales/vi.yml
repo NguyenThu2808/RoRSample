@@ -16,6 +16,7 @@ vi:
       users: "Dánh sách người dùng"
     application:
       basetitle: "Hướng dẫn Ruby on Rails với ứng dụng mẫu"
+      button_logout: "Đăng xuất"
   static_pages:
     about:
       railstutorialapp: "Hướng dẫn Ruby on Rails với ứng dụng mẫu"
@@ -49,14 +50,29 @@ vi:
   users:
     new:
       title: "Tin tức"
-      signup: "Đăng ký"
+      sign_up: "Đăng ký"
       content: "Đây sẽ là trang đăng ký cho người dùng mới."
-      createacc: "Tạo tài khoản"
+      create_account: "Tạo tài khoản"
       confirm: "Xác nhận"
     create:
       welcome: "Chào mừng bạn đến với Ứng dụng mẫu!"
     show:
-      nouser: "Người dùng không đúng"
+      not_found: "Người dùng không đúng"
+    edit:
+      edit_user: "Chỉnh sửa"
+      save_changes: "Lưu thay đổi"
+      change: "thay đổi"
+      update: "Cập nhật hồ sơ"
+      login_request: "Bạn hãy đăng nhập"
+    update:
+      profile: "Cập nhật thành công"
+    index:
+      title: "Tất cả người dùng"
+      delete: "Xóa"
+    destroy:
+      user_deleted: "Người dùng đã đc xóa"
+    user:
+      you_sure: "Bạn có chắc chắn muốn xóa?"
   shared:
     error_messages:
       the_form_contains: "Biểu mẫu có chứa"
@@ -64,8 +80,8 @@ vi:
   sessions:
     new:
       login: "Đăng nhập"
-      newuser: "Người dùng mới"
-      rememberme: "Hãy nhớ tôi trên máy tính này"
-      signupnow: "Đăng ký ngay"
+      new_user: "Người dùng mới"
+      remember_me: "Hãy nhớ tôi trên máy tính này"
+      signup_now: "Đăng ký ngay"
     create:
       invalid: "Cả email/mật khẩu đều không hợp lệ"
