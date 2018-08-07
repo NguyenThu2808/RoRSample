@@ -1,4 +1,5 @@
 class AccountActivationsController < ApplicationController
+<<<<<<< HEAD
   def edit
     if user = User.find_by email: params[:email]
       if user&.authenticated?(:activation, params[:id]) && !user.activated?

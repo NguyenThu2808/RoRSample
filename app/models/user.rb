@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
   attr_accessor :remember_token, :activation_token, :reset_token
   before_save :downcase_email
   before_create :create_activation_digest
@@ -6,7 +7,8 @@ class User < ApplicationRecord
   VALID_EMAIL_REGEX = Settings.email_regex
   validates :email, presence: true, length: {maximum: Settings.length_email},
     format: {with: VALID_EMAIL_REGEX}, uniqueness: {case_sensitive: false}
-  validates :password, presence: true, length: {minimum: Settings.pw_min}
+  validates :password, presence: true, length: {minimum: Settings.pw_min},
+    allow_nil: true
   has_secure_password
   scope :selected, -> {select :id, :name, :email}
   scope :ordered, -> {order created_at: :DESC}
@@ -33,7 +35,8 @@ class User < ApplicationRecord
 
   def create_reset_digest
     self.reset_token = User.new_token
-    update_attributes reset_digest: User.digest(reset_token), reset_sent_at: Time.zone.now
+    update_attributes reset_digest: User.digest(reset_token),
+      reset_sent_at: Time.zone.now
   end
 
   def send_password_reset_email
@@ -53,6 +56,10 @@ class User < ApplicationRecord
 
   def forget
     update_attributes remember_digest: nil
+  end
+
+  def feed
+    Micropost.where("user_id = ?", id)
   end
 
   private
