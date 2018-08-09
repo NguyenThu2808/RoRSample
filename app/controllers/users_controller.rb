@@ -1,10 +1,17 @@
 class UsersController < ApplicationController
+
   before_action :load_user, except: %i(new create index)
   before_action :logged_in_user, only: %i(index edit update destroy)
   before_action :correct_user, only: %i(edit update)
   before_action :verify_admin, only: :destroy
 
-  def show; end
+  def show
+    @user = User.find_by id: params[:id]
+    #  return if @user
+    #  flash[:warning] = t ".nouser"
+    #  redirect_to root_url
+    @microposts = @user.microposts.paginate page: params[:page]
+  end
 
   def index
     @users = User.selected.ordered
@@ -29,6 +36,7 @@ class UsersController < ApplicationController
   end
 
   def update
+    # @user = User.find_by(params[:id])
     if @user.update_attributes user_params
       flash[:success] = t ".profile"
       redirect_to @user
@@ -51,7 +59,7 @@ class UsersController < ApplicationController
   def load_user
     return if @user = User.find_by(id: params[:id])
     flash[:danger] = t ".not_found"
-    redirect_to users_path
+    redirect_to users_path #root_url
   end
 
   def user_params
@@ -59,15 +67,12 @@ class UsersController < ApplicationController
       :password_confirmation
   end
 
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t ".login_request"
-    redirect_to login_url
-  end
-
   def correct_user
     redirect_to root_url unless current_user? @user
+    # @user = User.find_by id: params[:id]
+    # return if current_user? @user
+    # flash[:danger] = t "controller.user.please"
+    # redirect_to root_url
   end
 
   def verify_admin

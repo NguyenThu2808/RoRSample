@@ -114,7 +114,7 @@ en:
     password_reset:
       password_reset: "Password_reset"
       hi: "Hi"
-  account_activation:
+  account_activations:
     edit:
       not_found: "Not found"
       account_activated: "Account activated!"
